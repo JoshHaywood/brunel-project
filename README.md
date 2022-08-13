@@ -3,9 +3,9 @@
 **Please note this project has been moved to this repo as its repo is inaccessible to users outside of the academic institution it was created under, therefore it will lack the relevant commit logs.**
 **Additionally note this was a group project and I do not take credit for any back-end development. As a result I have listed attributions below.**
 
-- Josh Haywood (Front-end, documentation, concept, project lead) - https://www.joshhaywood-portfolio.com/
-- Yordan Hristov (Back-end) - https://www.dantcho.com/
-- Danny Daley (Full stack) - https://dannydaley.co.uk
+- Josh Haywood (Front-end, documentation) - https://www.joshhaywood-portfolio.com/
+- Yordan Hristov (Back-end, documentation) - https://www.dantcho.com/
+- Danny Daley (Front end, documentation) - https://dannydaley.co.uk
 
 This project is a website based around the Brunel project hosted at Kresen Kernow (Redruth Cornwall) highlighting the work of Brunel and Victorian era photography.
 Created for the photography department of Falmouth University by web development students.

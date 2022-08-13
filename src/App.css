@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 16px; 
+  font-family: 'Montserrat', sans-serif;
+  --primary-colour: #f2a900;
+  --secondary-colour: #00626b;
+  --tertiary-colour: #4da3b3;
+  --quaternary-colour: #142c30;
+  --quinary-colour: #b8bcc2; 
+  --primary-text-colour: #ffffff; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: var(--quinary-colour);
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body::-webkit-scrollbar { 
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track { 
+  background: var(--quaternary-colour);
+}
+
+body::-webkit-scrollbar-thumb { 
+  background: var(--primary-colour);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.25rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+a {
+  font-size: 1rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+
+  /* Underline animation setup */
+  background-image: linear-gradient(var(--primary-colour), var(--primary-colour));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
+li, ul {
+  list-style: none;
+  font-size: 1rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+button {
+  font-size: 1rem;
+  color: var(--primary-text-colour);
+  font-weight: 300;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--primary-text-colour);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--primary-text-colour);
+}
+
+/* Custom CSS from Tailwind limitations */
+
+#backToTop:hover p {
+  animation: bounce 1s infinite;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
